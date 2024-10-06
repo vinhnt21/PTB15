@@ -1,11 +1,17 @@
-diem_toan =  float(input("Nhập điểm toán: "))
-if diem_toan >= 9:
-    print("Học sinh xuất sắc")
-elif diem_toan >= 8:
-    print("Học sinh giỏi")
-elif diem_toan >= 6.5:
-    print("Học sinh khá")
-elif diem_toan >= 5:
-    print("Học sinh trung bình")
+username = 'kien_xau_trai'
+password = '123456'
+
+username_input = input('Username: ')
+password_input = input('Password: ')
+
+
+if username_input == username and password_input == password:
+    print('Đăng nhập thành công!!!')
+elif username_input == username and password_input != password:
+    print('Sai mật khẩu')
+elif username_input != username and password_input == password:
+    print('Sai tên đăng nhập')
 else:
-    print("Học sinh yếu")
+    print('Đăng nhập thất bại')
+    print('Vui lòng nhập kien_xau_trai')
+    
